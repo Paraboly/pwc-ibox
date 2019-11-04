@@ -14,6 +14,7 @@ export namespace Components {
   interface PwcIboxContent {}
   interface PwcIboxFooter {}
   interface PwcIboxTitle {}
+  interface PwcIboxTools {}
 }
 
 declare global {
@@ -42,11 +43,18 @@ declare global {
     prototype: HTMLPwcIboxTitleElement;
     new (): HTMLPwcIboxTitleElement;
   };
+
+  interface HTMLPwcIboxToolsElement extends Components.PwcIboxTools, HTMLStencilElement {}
+  var HTMLPwcIboxToolsElement: {
+    prototype: HTMLPwcIboxToolsElement;
+    new (): HTMLPwcIboxToolsElement;
+  };
   interface HTMLElementTagNameMap {
     'pwc-ibox': HTMLPwcIboxElement;
     'pwc-ibox-content': HTMLPwcIboxContentElement;
     'pwc-ibox-footer': HTMLPwcIboxFooterElement;
     'pwc-ibox-title': HTMLPwcIboxTitleElement;
+    'pwc-ibox-tools': HTMLPwcIboxToolsElement;
   }
 }
 
@@ -55,12 +63,14 @@ declare namespace LocalJSX {
   interface PwcIboxContent {}
   interface PwcIboxFooter {}
   interface PwcIboxTitle {}
+  interface PwcIboxTools {}
 
   interface IntrinsicElements {
     'pwc-ibox': PwcIbox;
     'pwc-ibox-content': PwcIboxContent;
     'pwc-ibox-footer': PwcIboxFooter;
     'pwc-ibox-title': PwcIboxTitle;
+    'pwc-ibox-tools': PwcIboxTools;
   }
 }
 
@@ -74,6 +84,7 @@ declare module "@stencil/core" {
       'pwc-ibox-content': LocalJSX.PwcIboxContent & JSXBase.HTMLAttributes<HTMLPwcIboxContentElement>;
       'pwc-ibox-footer': LocalJSX.PwcIboxFooter & JSXBase.HTMLAttributes<HTMLPwcIboxFooterElement>;
       'pwc-ibox-title': LocalJSX.PwcIboxTitle & JSXBase.HTMLAttributes<HTMLPwcIboxTitleElement>;
+      'pwc-ibox-tools': LocalJSX.PwcIboxTools & JSXBase.HTMLAttributes<HTMLPwcIboxToolsElement>;
     }
   }
 }

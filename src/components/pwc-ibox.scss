@@ -171,3 +171,32 @@ body.fullscreen-ibox-mode {
 .ibox.fullscreen .ibox-content {
   min-height: calc(100% - 48px);
 }
+
+.ibox-tools {
+  display: block;
+  float: none;
+  margin-top: 15px;
+  position: relative;
+  padding: 0;
+  text-align: right;
+}
+
+.ibox-tools a {
+  cursor: pointer;
+  margin-left: 5px;
+  color: #c4c4c4;
+}
+
+.ibox-tools a.btn-primary {
+  color: #fff;
+}
+
+.ibox-tools .dropdown-menu > li > a {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.ibox .ibox-tools.open > .dropdown-menu {
+  left: auto;
+  right: 0;
+}
