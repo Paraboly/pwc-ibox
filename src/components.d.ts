@@ -12,7 +12,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface PwcIbox {}
   interface PwcIboxContent {}
-  interface PwcIboxTitle {}
+  interface PwcIboxFooter {}
   interface PwcIboxTitle {}
 }
 
@@ -31,10 +31,10 @@ declare global {
     new (): HTMLPwcIboxContentElement;
   };
 
-  interface HTMLPwcIboxTitleElement extends Components.PwcIboxTitle, HTMLStencilElement {}
-  var HTMLPwcIboxTitleElement: {
-    prototype: HTMLPwcIboxTitleElement;
-    new (): HTMLPwcIboxTitleElement;
+  interface HTMLPwcIboxFooterElement extends Components.PwcIboxFooter, HTMLStencilElement {}
+  var HTMLPwcIboxFooterElement: {
+    prototype: HTMLPwcIboxFooterElement;
+    new (): HTMLPwcIboxFooterElement;
   };
 
   interface HTMLPwcIboxTitleElement extends Components.PwcIboxTitle, HTMLStencilElement {}
@@ -45,7 +45,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'pwc-ibox': HTMLPwcIboxElement;
     'pwc-ibox-content': HTMLPwcIboxContentElement;
-    'pwc-ibox-title': HTMLPwcIboxTitleElement;
+    'pwc-ibox-footer': HTMLPwcIboxFooterElement;
     'pwc-ibox-title': HTMLPwcIboxTitleElement;
   }
 }
@@ -53,13 +53,13 @@ declare global {
 declare namespace LocalJSX {
   interface PwcIbox {}
   interface PwcIboxContent {}
-  interface PwcIboxTitle {}
+  interface PwcIboxFooter {}
   interface PwcIboxTitle {}
 
   interface IntrinsicElements {
     'pwc-ibox': PwcIbox;
     'pwc-ibox-content': PwcIboxContent;
-    'pwc-ibox-title': PwcIboxTitle;
+    'pwc-ibox-footer': PwcIboxFooter;
     'pwc-ibox-title': PwcIboxTitle;
   }
 }
@@ -72,7 +72,7 @@ declare module "@stencil/core" {
     interface IntrinsicElements {
       'pwc-ibox': LocalJSX.PwcIbox & JSXBase.HTMLAttributes<HTMLPwcIboxElement>;
       'pwc-ibox-content': LocalJSX.PwcIboxContent & JSXBase.HTMLAttributes<HTMLPwcIboxContentElement>;
-      'pwc-ibox-title': LocalJSX.PwcIboxTitle & JSXBase.HTMLAttributes<HTMLPwcIboxTitleElement>;
+      'pwc-ibox-footer': LocalJSX.PwcIboxFooter & JSXBase.HTMLAttributes<HTMLPwcIboxFooterElement>;
       'pwc-ibox-title': LocalJSX.PwcIboxTitle & JSXBase.HTMLAttributes<HTMLPwcIboxTitleElement>;
     }
   }

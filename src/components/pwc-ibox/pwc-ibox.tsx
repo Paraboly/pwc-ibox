@@ -2,7 +2,7 @@ import { Component, h } from "@stencil/core";
 
 @Component({
   tag: "pwc-ibox",
-  styleUrl: "pwc-ibox.scss",
+  styleUrl: "../pwc-ibox.scss",
   shadow: false
 })
 export class MyComponent {
