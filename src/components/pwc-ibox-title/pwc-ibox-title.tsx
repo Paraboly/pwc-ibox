@@ -5,7 +5,7 @@ import { Component, h } from "@stencil/core";
   styleUrl: "../pwc-ibox.scss",
   shadow: false
 })
-export class MyComponent {
+export class PWCIboxtitleComponent {
   render() {
     return (
       <div class="ibox-title">

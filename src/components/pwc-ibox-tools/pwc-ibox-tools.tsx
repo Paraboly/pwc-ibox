@@ -5,7 +5,7 @@ import { Component, h, Prop, Event, EventEmitter } from "@stencil/core";
   styleUrl: "../pwc-ibox.scss",
   shadow: false
 })
-export class MyComponent {
+export class PWCIboxToolsComponent {
   @Prop() closeButton: boolean = true;
   @Prop() minimizeButton: boolean = true;
 

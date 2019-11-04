@@ -5,7 +5,7 @@ import { Component, h, Prop, Listen } from "@stencil/core";
   styleUrl: "../pwc-ibox.scss",
   shadow: false
 })
-export class MyComponent {
+export class PWCIboxComponent {
   @Prop() closed: boolean = false;
 
   @Listen("pwcIboxTools_closeClicked", { target: "window" })
