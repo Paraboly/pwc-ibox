@@ -38,6 +38,10 @@ $ibox-content-bg: white; // IBox Background content
   box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.1);
 }
 
+.ibox-closed {
+  display: none;
+}
+
 .ibox.collapsed .ibox-content {
   display: none;
 }
@@ -90,6 +94,11 @@ $ibox-content-bg: white; // IBox Background content
 
 .ibox-content {
   clear: both;
+}
+
+.ibox-footer-minimized,
+.ibox-content-minimized {
+  display: none;
 }
 
 .ibox-heading {

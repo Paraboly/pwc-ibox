@@ -10,9 +10,15 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface PwcIbox {}
-  interface PwcIboxContent {}
-  interface PwcIboxFooter {}
+  interface PwcIbox {
+    'closed': boolean;
+  }
+  interface PwcIboxContent {
+    'minimized': boolean;
+  }
+  interface PwcIboxFooter {
+    'minimized': boolean;
+  }
   interface PwcIboxTitle {}
   interface PwcIboxTools {
     'closeButton': boolean;
@@ -62,13 +68,21 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface PwcIbox {}
-  interface PwcIboxContent {}
-  interface PwcIboxFooter {}
+  interface PwcIbox {
+    'closed'?: boolean;
+  }
+  interface PwcIboxContent {
+    'minimized'?: boolean;
+  }
+  interface PwcIboxFooter {
+    'minimized'?: boolean;
+  }
   interface PwcIboxTitle {}
   interface PwcIboxTools {
     'closeButton'?: boolean;
     'minimizeButton'?: boolean;
+    'onPwcIboxTools_closeClicked'?: (event: CustomEvent<any>) => void;
+    'onPwcIboxTools_minimizeClicked'?: (event: CustomEvent<any>) => void;
   }
 
   interface IntrinsicElements {

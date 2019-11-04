@@ -1,4 +1,4 @@
-import { Component, h } from "@stencil/core";
+import { Component, h, Prop, Listen } from "@stencil/core";
 
 @Component({
   tag: "pwc-ibox-footer",
@@ -6,9 +6,29 @@ import { Component, h } from "@stencil/core";
   shadow: false
 })
 export class MyComponent {
+  @Prop() minimized: boolean = false;
+
+  @Listen("pwcIboxTools_minimizeClicked", { target: "window" })
+  minimizedHandler(event: CustomEvent) {
+    console.log(
+      "pwc-ibox-footer received pwcIboxTools_minimizeClicked",
+      event.detail
+    );
+    this.minimized = !this.minimized;
+    console.log("pwc-ibox-footer minimized: " + this.minimized, event.detail);
+  }
+
   render() {
+    let classArr = ["ibox-footer"];
+
+    if (this.minimized) {
+      classArr.push("ibox-footer-minimized");
+    }
+
+    let classStr = classArr.join(" ");
+
     return (
-      <div class="ibox-footer">
+      <div class={classStr}>
         <slot />
       </div>
     );
