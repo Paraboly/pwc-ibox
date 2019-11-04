@@ -1,0 +1,16 @@
+import { Component, h } from "@stencil/core";
+
+@Component({
+  tag: "pwc-ibox-title",
+  styleUrl: "pwc-ibox-title.scss",
+  shadow: false
+})
+export class MyComponent {
+  render() {
+    return (
+      <div class="ibox-title">
+        <slot />
+      </div>
+    );
+  }
+}
