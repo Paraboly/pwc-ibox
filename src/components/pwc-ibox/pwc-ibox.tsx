@@ -1,4 +1,4 @@
-import { Component, h, Prop, Listen } from "@stencil/core";
+import { Component, h, Prop, Listen, Method } from "@stencil/core";
 
 @Component({
   tag: "pwc-ibox",
@@ -9,9 +9,9 @@ export class PWCIboxComponent {
   @Prop() closed: boolean = false;
 
   @Listen("pwcIboxTools_closeClicked", { target: "window" })
-  minimizedHandler(event: CustomEvent) {
+  closedHandler(event: CustomEvent) {
     console.log("pwc-ibox captured pwcIboxTools_closeClicked", event.detail);
-    this.closed = !this.closed;
+    this.closed = true;
   }
 
   render() {

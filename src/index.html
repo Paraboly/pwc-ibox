@@ -13,7 +13,14 @@
       src="/build/stencil-starter-project-name.esm.js"
     ></script>
     <script nomodule src="/build/stencil-starter-project-name.js"></script>
+
+    <script>
+      function restoreIbox() {
+        document.querySelector("pwc-ibox").closed = false;
+      }
+    </script>
   </head>
+
   <body style="background-color: grey;">
     <pwc-ibox>
       <pwc-ibox-title>
@@ -25,5 +32,7 @@
       <pwc-ibox-content>Content</pwc-ibox-content>
       <pwc-ibox-footer>Footer</pwc-ibox-footer>
     </pwc-ibox>
+
+    <button onclick="restoreIbox()">Restore Ibox</button>
   </body>
 </html>
