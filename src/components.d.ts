@@ -14,7 +14,10 @@ export namespace Components {
   interface PwcIboxContent {}
   interface PwcIboxFooter {}
   interface PwcIboxTitle {}
-  interface PwcIboxTools {}
+  interface PwcIboxTools {
+    'closeButton': boolean;
+    'minimizeButton': boolean;
+  }
 }
 
 declare global {
@@ -63,7 +66,10 @@ declare namespace LocalJSX {
   interface PwcIboxContent {}
   interface PwcIboxFooter {}
   interface PwcIboxTitle {}
-  interface PwcIboxTools {}
+  interface PwcIboxTools {
+    'closeButton'?: boolean;
+    'minimizeButton'?: boolean;
+  }
 
   interface IntrinsicElements {
     'pwc-ibox': PwcIbox;
