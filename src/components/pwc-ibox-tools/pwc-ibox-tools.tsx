@@ -17,14 +17,12 @@ export class PWCIboxToolsComponent {
       <div class="ibox-tools">
         <slot />
         {this.minimizeButton && (
-          <button onClick={() => this.pwcIboxTools_minimizeClicked.emit()}>
+          <a onClick={() => this.pwcIboxTools_minimizeClicked.emit()}>
             Minimize
-          </button>
+          </a>
         )}
         {this.closeButton && (
-          <button onClick={() => this.pwcIboxTools_closeClicked.emit()}>
-            Close
-          </button>
+          <a onClick={() => this.pwcIboxTools_closeClicked.emit()}>Close</a>
         )}
       </div>
     );
