@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Component Starter</title>
 
-  <script type="module" src="/build/stencil-starter-project-name.esm.js"></script>
-  <script nomodule src="/build/stencil-starter-project-name.js"></script>
+    <script
+      type="module"
+      src="/build/stencil-starter-project-name.esm.js"
+    ></script>
+    <script nomodule src="/build/stencil-starter-project-name.js"></script>
 
-</head>
-<body>
+    <script>
+      function restoreIbox() {
+        document.querySelector("pwc-ibox").closed = false;
+      }
+    </script>
+  </head>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <body style="background-color: grey;">
+    <pwc-ibox>
+      <pwc-ibox-title>
+        <h5>Title</h5>
+        <pwc-ibox-tools minimize-button close-button>
+          Tools
+        </pwc-ibox-tools>
+      </pwc-ibox-title>
+      <pwc-ibox-content>Content</pwc-ibox-content>
+      <pwc-ibox-footer>Footer</pwc-ibox-footer>
+    </pwc-ibox>
 
-</body>
+    <button onclick="restoreIbox()">Restore Ibox</button>
+  </body>
 </html>
