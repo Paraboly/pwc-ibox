@@ -3,7 +3,7 @@ import { Component, h } from "@stencil/core";
 @Component({
   tag: "pwc-ibox-title",
   styleUrl: "../pwc-ibox.scss",
-  shadow: false
+  shadow: true
 })
 export class PWCIboxtitleComponent {
   render() {

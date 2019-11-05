@@ -3,19 +3,14 @@ import { Component, h, Prop, Listen } from "@stencil/core";
 @Component({
   tag: "pwc-ibox-footer",
   styleUrl: "../pwc-ibox.scss",
-  shadow: false
+  shadow: true
 })
 export class PWCIboxFooterComponent {
   @Prop() minimized: boolean = false;
 
   @Listen("pwcIboxTools_minimizeClicked", { target: "window" })
-  minimizedHandler(event: CustomEvent) {
-    console.log(
-      "pwc-ibox-footer received pwcIboxTools_minimizeClicked",
-      event.detail
-    );
+  minimizedHandler() {
     this.minimized = !this.minimized;
-    console.log("pwc-ibox-footer minimized: " + this.minimized, event.detail);
   }
 
   render() {
