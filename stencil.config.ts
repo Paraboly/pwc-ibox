@@ -2,7 +2,7 @@ import { Config } from "@stencil/core";
 import { sass } from "@stencil/sass";
 
 export const config: Config = {
-  namespace: "stencil-starter-project-name",
+  namespace: "pwc-ibox",
   outputTargets: [
     {
       type: "dist",

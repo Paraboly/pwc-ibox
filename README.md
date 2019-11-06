@@ -11,13 +11,13 @@
 
 ![WebComponent PWC Animated Checkbox](https://raw.githubusercontent.com/paraboly/pwc-ibox/repository-resources/Screenshots/JSLibraryBoilerplate.png)
 
-## [Live Codepen Example](https://codepen.io/wrathchaos/pen/dyyvRzM)
+## [Live JSFiddle Example](https://jsfiddle.net/starikcetin/tjh6y15o/)
 
 ## Installation
 
 ### Script tag
 
-- Put a script tag similar to this `<script	type="module" src="https://unpkg.com/@paraboly/pwc-ibox@latest/dist/pwc-ibox/pwc-ibox.esm.js"></script>` in the head of your index.html
+- Put a script tag similar to this `<script	type="module" src="https://unpkg.com/@paraboly/pwc-ibox@latest/dist/pwc-ibox.js"></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
@@ -38,13 +38,13 @@
 ```html
 <pwc-ibox>
   <pwc-ibox-title>
-	<h5>Title</h5>
-	<pwc-ibox-tools minimize-button close-button>
-	  Tools
-	</pwc-ibox-tools>
+    Title Goes Here
+    <pwc-ibox-tools minimize-button close-button>
+      Tools content go here.
+    </pwc-ibox-tools>
   </pwc-ibox-title>
-  <pwc-ibox-content>Content</pwc-ibox-content>
-  <pwc-ibox-footer>Footer</pwc-ibox-footer>
+  <pwc-ibox-content>Content goes here.</pwc-ibox-content>
+  <pwc-ibox-footer>Footer goes here.</pwc-ibox-footer>
 </pwc-ibox>
 ```
 

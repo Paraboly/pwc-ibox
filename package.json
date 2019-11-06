@@ -1,6 +1,6 @@
 {
-  "name": "stencil-starter-project-name",
-  "version": "0.0.1",
+  "name": "@paraboly/pwc-ibox",
+  "version": "0.0.5",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,7 +9,6 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.js",
   "files": [
     "dist/",
     "loader/"
@@ -33,9 +32,16 @@
     "type": "git",
     "url": "git+https://github.com/Paraboly/pwc-ibox.git"
   },
-  "author": "",
+  "author": "starikcetin <cetinsamedtarik@gmail.com> (https://github.com/starikcetin)",
   "bugs": {
     "url": "https://github.com/Paraboly/pwc-ibox/issues"
   },
-  "homepage": "https://github.com/Paraboly/pwc-ibox#readme"
+  "homepage": "https://github.com/Paraboly/pwc-ibox#readme",
+  "keywords": [
+    "web-component",
+    "stencil",
+    "paraboly",
+    "ibox",
+    "shadow"
+  ]
 }
