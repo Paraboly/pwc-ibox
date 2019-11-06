@@ -17,7 +17,7 @@
 
 ### Script tag
 
-- Put a script tag similar to this `<script	type="module" src="https://unpkg.com/@paraboly/pwc-ibox@latest/dist/pwc-ibox/pwc-ibox.esm.js"></script>` in the head of your index.html
+- Put a script tag similar to this `<script	type="module" src="https://unpkg.com/@paraboly/pwc-ibox@latest/dist/pwc-ibox.js"></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
