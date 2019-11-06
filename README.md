@@ -11,7 +11,7 @@
 
 ![WebComponent PWC Animated Checkbox](https://raw.githubusercontent.com/paraboly/pwc-ibox/repository-resources/Screenshots/JSLibraryBoilerplate.png)
 
-## [Live JSFiddle Example](https://jsfiddle.net/starikcetin/fa0o19tq/72/)
+## [Live JSFiddle Example](https://jsfiddle.net/starikcetin/tjh6y15o/)
 
 ## Installation
 
@@ -38,13 +38,13 @@
 ```html
 <pwc-ibox>
   <pwc-ibox-title>
-	<h5>Title</h5>
-	<pwc-ibox-tools minimize-button close-button>
-	  Tools
-	</pwc-ibox-tools>
+    Title Goes Here
+    <pwc-ibox-tools minimize-button close-button>
+      Tools content go here.
+    </pwc-ibox-tools>
   </pwc-ibox-title>
-  <pwc-ibox-content>Content</pwc-ibox-content>
-  <pwc-ibox-footer>Footer</pwc-ibox-footer>
+  <pwc-ibox-content>Content goes here.</pwc-ibox-content>
+  <pwc-ibox-footer>Footer goes here.</pwc-ibox-footer>
 </pwc-ibox>
 ```
 
