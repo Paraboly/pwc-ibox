@@ -28,5 +28,14 @@
   "dependencies": {
     "@stencil/sass": "^1.1.1",
     "@types/jest": "^24.0.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paraboly/pwc-ibox.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Paraboly/pwc-ibox/issues"
+  },
+  "homepage": "https://github.com/Paraboly/pwc-ibox#readme"
 }
