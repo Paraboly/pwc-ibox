@@ -39,12 +39,12 @@
 
     // Listen for pwcIboxTools_minimizeClicked
     pwcIbox.addEventListener("pwcIboxTools_minimizeClicked", event => {
-      console.log("pwcIboxTools_minimizeClicked raised");
+      console.log("(single) pwcIboxTools_minimizeClicked raised");
     });
 
     // Listen for pwcIboxTools_closeClicked
     pwcIbox.addEventListener("pwcIboxTools_closeClicked", event => {
-      console.log("pwcIboxTools_closeClicked event: ", event.detail);
+      console.log("(single) pwcIboxTools_closeClicked raised", event.detail);
     });
 
     // Multiple Iboxes
@@ -52,12 +52,15 @@
     pwcIboxes.forEach(elem => {
       // Listen for pwcIboxTools_minimizeClicked
       elem.addEventListener("pwcIboxTools_minimizeClicked", event => {
-        console.log("pwcIboxTools_minimizeClicked raised");
+        console.log("(multiple) pwcIboxTools_minimizeClicked raised");
       });
 
       // Listen for pwcIboxTools_closeClicked
       elem.addEventListener("pwcIboxTools_closeClicked", event => {
-        console.log("pwcIboxTools_closeClicked event: ", event.detail);
+        console.log(
+          "(multiple) pwcIboxTools_closeClicked raised",
+          event.detail
+        );
       });
     });
   </script>
