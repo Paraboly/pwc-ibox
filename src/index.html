@@ -35,4 +35,33 @@
 
     <button onclick="restoreIbox()">Restore Ibox</button>
   </body>
+
+  <script>
+    // Single Ibox
+    const pwcIbox = document.querySelector("pwc-ibox");
+
+    // Listen for pwcIboxTools_minimizeClicked
+    pwcIbox.addEventListener("pwcIboxTools_minimizeClicked", event => {
+      console.log("pwcIboxTools_minimizeClicked raised");
+    });
+
+    // Listen for pwcIboxTools_closeClicked
+    pwcIbox.addEventListener("pwcIboxTools_closeClicked", event => {
+      console.log("pwcIboxTools_closeClicked event: ", event.detail);
+    });
+
+    // Multiple Iboxes
+    const pwcIboxes = document.querySelectorAll("pwc-ibox");
+    pwcIboxes.forEach(elem => {
+      // Listen for pwcIboxTools_minimizeClicked
+      elem.addEventListener("pwcIboxTools_minimizeClicked", event => {
+        console.log("pwcIboxTools_minimizeClicked raised");
+      });
+
+      // Listen for pwcIboxTools_closeClicked
+      elem.addEventListener("pwcIboxTools_closeClicked", event => {
+        console.log("pwcIboxTools_closeClicked event: ", event.detail);
+      });
+    });
+  </script>
 </html>
