@@ -11,7 +11,7 @@
 
 ![WebComponent PWC Animated Checkbox](https://raw.githubusercontent.com/paraboly/pwc-ibox/repository-resources/Screenshots/JSLibraryBoilerplate.png)
 
-## [Live JSFiddle Example](https://jsfiddle.net/starikcetin/tjh6y15o/)
+## [Live JSFiddle Example](https://jsfiddle.net/starikcetin/tjh6y15o/1/)
 
 ## Installation
 
