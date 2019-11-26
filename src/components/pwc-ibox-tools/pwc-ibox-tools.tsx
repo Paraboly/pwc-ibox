@@ -3,7 +3,7 @@ import { Component, h, Prop, Event, EventEmitter } from "@stencil/core";
 @Component({
   tag: "pwc-ibox-tools",
   styleUrl: "../pwc-ibox.scss",
-  shadow: true
+  shadow: false
 })
 export class PWCIboxToolsComponent {
   @Prop() closeButton: boolean = true;

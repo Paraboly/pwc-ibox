@@ -3,7 +3,7 @@ import { Component, h, Prop, Listen } from "@stencil/core";
 @Component({
   tag: "pwc-ibox-footer",
   styleUrl: "../pwc-ibox.scss",
-  shadow: true
+  shadow: false
 })
 export class PWCIboxFooterComponent {
   @Prop() minimized: boolean = false;

@@ -1,7 +1,7 @@
 {
   "name": "@paraboly/pwc-ibox",
-  "version": "0.0.7",
-  "description": "Stencil Component Starter",
+  "version": "0.1.0",
+  "description": "Generic container box with minimize and close controls.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
